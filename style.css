@@ -1,0 +1,195 @@
+
+:root {
+   --fundo-menu: rgb(253, 253, 253);
+}
+
+
+* {
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgb(60, 59, 59);
+}
+
+#conteiner {
+    max-width: 800px;
+    height: 100vh;
+    display: block;
+
+    justify-content: center;
+}
+
+#logo {
+    opacity: 0.8;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid teal;
+    background-color: var( --fundo-menu);
+    position: absolute;
+}
+
+.nome {
+   
+    width: 150px;
+    text-align: center;
+}
+
+.nome h2 {
+    background-color: var( --fundo-menu);
+}
+
+.barra-nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-top: 2px dotted  rgba(229, 220, 220, 0.805);
+    border-bottom: 2px dotted  rgba(229, 220, 220, 0.805);
+    width: 280px;
+    padding: 10px;
+    background-color: var( --fundo-menu);
+}
+
+.barra-nav li {
+    width: 100px;
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var( --fundo-menu);
+}
+
+.imagem-logo {
+    background-image: url(./imagens/cafe-fundo-2.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    height: 50%;
+}
+
+
+#container-cards {
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+;
+
+}
+
+.cards {
+    border-radius: 30px;
+    background-color:#2c2c2c;
+    width: 240px;
+    height: 200px;
+    padding: 5px;
+
+
+}
+
+.container-img {
+    background-color:#2c2c2c;
+    width: 190px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img img {
+    object-fit: cover;
+    object-position: center ;
+    background-size: contain;
+    width: 50%;
+    height: 100%;
+}
+
+.descricao {
+    text-align: center;
+    margin-top: 5px;
+    padding: 2px;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+#container-imagens-mov {
+    margin-top: 30px;
+
+    width: auto;
+    height: 350px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards-mov {
+    border-radius: 30px;
+    width: 350px;
+    height: 550px;
+    background-color: aliceblue;
+    flex: 1;
+    overflow: hidden;
+}
+
+.cards-mov img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.cards-mov:hover {
+    flex: 3;
+}
+
+
+@media screen and (max-width: 790px) {
+    #logo {
+        margin-top: 60px;
+        display: none;
+    }
+
+    .nome {
+        display: none;
+    }
+    
+    .barra-nav {
+        display: block;
+        border: none;
+        width: 250px;
+    }
+
+    .barra-nav li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 230px;
+        margin-bottom: 30px;
+        border-bottom: 2px dotted white;
+    }
+
+    #nav-button {
+
+        width: 60px;
+        height: 50px;
+        position: absolute;
+        display: inline;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    #nav-button div {
+        border: 1px solid rgb(255, 255, 255);
+        margin: 11px;
+    }
+
+
+}
